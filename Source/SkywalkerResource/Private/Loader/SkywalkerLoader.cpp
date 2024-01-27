@@ -3,7 +3,7 @@
 #include "Loader/SkywalkerLoader.h"
 #include "Engine/AssetManager.h"
 
-CSkywalkerLoader::CSkywalkerLoader(FSkywalkerResourceModule *InResourceModule) : ResourceModule(InResourceModule)
+CSkywalkerLoader::CSkywalkerLoader(USkywalkerResourceSubsystem *InResourceModule) : ResourceModule(InResourceModule)
 {
 }
 CSkywalkerLoader::~CSkywalkerLoader()

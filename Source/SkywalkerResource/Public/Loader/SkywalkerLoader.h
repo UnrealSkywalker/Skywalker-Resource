@@ -4,10 +4,10 @@
 
 #include "Engine/StreamableManager.h"
 
-#include "SkywalkerResource.h"
+#include "SkywalkerResourceSubsystem.h"
 #include "Asset/SkywalkerAsset.h"
 
-class FSkywalkerResourceModule;
+class USkywalkerResourceSubsystem;
 
 /**
  * ×ÊÔ´¼ÓÔØÆ÷
@@ -18,7 +18,7 @@ private:
 	TArray<CSkywalkerAsset *> SkywalkerAssetArray;
 	TArray<FSoftObjectPath> ArrayLoadSoftObjectPath;
 	TSharedPtr<FStreamableHandle> StreamableHandle;
-	FSkywalkerResourceModule *ResourceModule;
+	USkywalkerResourceSubsystem *ResourceModule;
 
 	void AssetLoadSuccess(FSoftObjectPath SoftObjectPath);
 
@@ -29,7 +29,7 @@ private:
 	void Release();
 
 public:
-	CSkywalkerLoader(FSkywalkerResourceModule *ResourceModule);
+	CSkywalkerLoader(USkywalkerResourceSubsystem *ResourceModule);
 	~CSkywalkerLoader();
 	bool Load(TArray<FSoftObjectPath> &TargetsToStream);
 	bool Load(const FSoftObjectPath &TargetToStream);
