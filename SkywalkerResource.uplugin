@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "SkywalkerResource",
+	"Description": "",
+	"Category": "Skywalker",
+	"CreatedBy": "shyfan",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SkywalkerResource",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
