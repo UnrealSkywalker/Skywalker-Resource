@@ -46,7 +46,7 @@ bool USkywalkerResourceSubsystem::AddAssetDataList(const FString &InPath)
 	{
 		UE_LOG(SkywalkerResourceModule, Log, TEXT("AssetName = %s"), *ArrayAssetData[i].AssetName.ToString());
 		UE_LOG(SkywalkerResourceModule, Log, TEXT("AssetClass = %s"), *ArrayAssetData[i].AssetClass.ToString());
-		UE_LOG(SkywalkerResourceModule, Log, TEXT("ObjectPath = %s"), *ArrayAssetData[i].ObjectPath.ToString());
+		//UE_LOG(SkywalkerResourceModule, Log, TEXT("ObjectPath = %s"), *ArrayAssetData[i].ObjectPath.ToString());
 		UE_LOG(SkywalkerResourceModule, Log, TEXT("PackageName = %s"), *ArrayAssetData[i].PackageName.ToString());
 		UE_LOG(SkywalkerResourceModule, Log, TEXT("PackagePath = %s"), *ArrayAssetData[i].PackagePath.ToString());
 	}
